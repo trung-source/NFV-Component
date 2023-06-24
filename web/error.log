@@ -1,0 +1,801 @@
+[2022-10-08 23:08:17 +0700] [796396] [DEBUG] Current configuration:
+  config: None
+  bind: ['127.0.0.1:8000']
+  backlog: 2048
+  workers: 15
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/core/ryu/mc
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: access.log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: error.log
+  loglevel: debug
+  capture_output: True
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: webserver:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7fb31ddc43a0>
+  on_reload: <function OnReload.on_reload at 0x7fb31ddc44c0>
+  when_ready: <function WhenReady.when_ready at 0x7fb31ddc45e0>
+  pre_fork: <function Prefork.pre_fork at 0x7fb31ddc4700>
+  post_fork: <function Postfork.post_fork at 0x7fb31ddc4820>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7fb31ddc4940>
+  worker_int: <function WorkerInt.worker_int at 0x7fb31ddc4a60>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7fb31ddc4b80>
+  pre_exec: <function PreExec.pre_exec at 0x7fb31ddc4ca0>
+  pre_request: <function PreRequest.pre_request at 0x7fb31ddc4dc0>
+  post_request: <function PostRequest.post_request at 0x7fb31ddc4e50>
+  child_exit: <function ChildExit.child_exit at 0x7fb31ddc4f70>
+  worker_exit: <function WorkerExit.worker_exit at 0x7fb31ddd80d0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7fb31ddd81f0>
+  on_exit: <function OnExit.on_exit at 0x7fb31ddd8310>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2022-10-08 23:08:17 +0700] [796396] [INFO] Starting gunicorn 20.0.4
+[2022-10-08 23:08:17 +0700] [796396] [DEBUG] Arbiter booted
+[2022-10-08 23:08:17 +0700] [796396] [INFO] Listening at: http://127.0.0.1:8000 (796396)
+[2022-10-08 23:08:17 +0700] [796396] [INFO] Using worker: sync
+[2022-10-08 23:08:17 +0700] [796400] [INFO] Booting worker with pid: 796400
+[2022-10-08 23:08:17 +0700] [796405] [INFO] Booting worker with pid: 796405
+[2022-10-08 23:08:17 +0700] [796406] [INFO] Booting worker with pid: 796406
+[2022-10-08 23:08:17 +0700] [796407] [INFO] Booting worker with pid: 796407
+[2022-10-08 23:08:17 +0700] [796408] [INFO] Booting worker with pid: 796408
+[2022-10-08 23:08:17 +0700] [796409] [INFO] Booting worker with pid: 796409
+[2022-10-08 23:08:17 +0700] [796410] [INFO] Booting worker with pid: 796410
+[2022-10-08 23:08:17 +0700] [796411] [INFO] Booting worker with pid: 796411
+[2022-10-08 23:08:17 +0700] [796412] [INFO] Booting worker with pid: 796412
+[2022-10-08 23:08:18 +0700] [796413] [INFO] Booting worker with pid: 796413
+[2022-10-08 23:08:18 +0700] [796414] [INFO] Booting worker with pid: 796414
+[2022-10-08 23:08:18 +0700] [796415] [INFO] Booting worker with pid: 796415
+[2022-10-08 23:08:18 +0700] [796416] [INFO] Booting worker with pid: 796416
+[2022-10-08 23:08:18 +0700] [796417] [INFO] Booting worker with pid: 796417
+[2022-10-08 23:08:18 +0700] [796396] [DEBUG] 15 workers
+[2022-10-08 23:08:18 +0700] [796418] [INFO] Booting worker with pid: 796418
+[2022-10-08 23:10:36 +0700] [796396] [INFO] Handling signal: int
+[2022-10-08 23:10:36 +0700] [796407] [INFO] Worker exiting (pid: 796407)
+[2022-10-08 23:10:36 +0700] [796400] [INFO] Worker exiting (pid: 796400)
+[2022-10-08 23:10:36 +0700] [796406] [INFO] Worker exiting (pid: 796406)
+[2022-10-08 23:10:36 +0700] [796415] [INFO] Worker exiting (pid: 796415)
+[2022-10-08 23:10:36 +0700] [796409] [INFO] Worker exiting (pid: 796409)
+[2022-10-08 23:10:36 +0700] [796417] [INFO] Worker exiting (pid: 796417)
+[2022-10-08 23:10:36 +0700] [796405] [INFO] Worker exiting (pid: 796405)
+[2022-10-08 23:10:36 +0700] [796414] [INFO] Worker exiting (pid: 796414)
+[2022-10-08 23:10:36 +0700] [796416] [INFO] Worker exiting (pid: 796416)
+[2022-10-08 23:10:36 +0700] [796418] [INFO] Worker exiting (pid: 796418)
+[2022-10-08 23:10:36 +0700] [796412] [INFO] Worker exiting (pid: 796412)
+[2022-10-08 23:10:36 +0700] [796408] [INFO] Worker exiting (pid: 796408)
+[2022-10-08 23:10:36 +0700] [796410] [INFO] Worker exiting (pid: 796410)
+[2022-10-08 23:10:36 +0700] [796413] [INFO] Worker exiting (pid: 796413)
+[2022-10-08 23:10:36 +0700] [796411] [INFO] Worker exiting (pid: 796411)
+[2022-10-08 23:10:37 +0700] [796396] [INFO] Shutting down: Master
+[2022-10-09 23:13:38 +0700] [1827760] [DEBUG] Current configuration:
+  config: None
+  bind: ['127.0.0.1:8000']
+  backlog: 2048
+  workers: 15
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/core/ryu/mc
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: access.log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: error.log
+  loglevel: debug
+  capture_output: True
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: webserver:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7ff6476473a0>
+  on_reload: <function OnReload.on_reload at 0x7ff6476474c0>
+  when_ready: <function WhenReady.when_ready at 0x7ff6476475e0>
+  pre_fork: <function Prefork.pre_fork at 0x7ff647647700>
+  post_fork: <function Postfork.post_fork at 0x7ff647647820>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7ff647647940>
+  worker_int: <function WorkerInt.worker_int at 0x7ff647647a60>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7ff647647b80>
+  pre_exec: <function PreExec.pre_exec at 0x7ff647647ca0>
+  pre_request: <function PreRequest.pre_request at 0x7ff647647dc0>
+  post_request: <function PostRequest.post_request at 0x7ff647647e50>
+  child_exit: <function ChildExit.child_exit at 0x7ff647647f70>
+  worker_exit: <function WorkerExit.worker_exit at 0x7ff64765b0d0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7ff64765b1f0>
+  on_exit: <function OnExit.on_exit at 0x7ff64765b310>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2022-10-09 23:13:38 +0700] [1827760] [INFO] Starting gunicorn 20.0.4
+[2022-10-09 23:13:38 +0700] [1827760] [DEBUG] Arbiter booted
+[2022-10-09 23:13:38 +0700] [1827760] [INFO] Listening at: http://127.0.0.1:8000 (1827760)
+[2022-10-09 23:13:38 +0700] [1827760] [INFO] Using worker: sync
+[2022-10-09 23:13:38 +0700] [1827764] [INFO] Booting worker with pid: 1827764
+[2022-10-09 23:13:38 +0700] [1827765] [INFO] Booting worker with pid: 1827765
+[2022-10-09 23:13:38 +0700] [1827766] [INFO] Booting worker with pid: 1827766
+[2022-10-09 23:13:38 +0700] [1827769] [INFO] Booting worker with pid: 1827769
+[2022-10-09 23:13:38 +0700] [1827771] [INFO] Booting worker with pid: 1827771
+[2022-10-09 23:13:38 +0700] [1827773] [INFO] Booting worker with pid: 1827773
+[2022-10-09 23:13:38 +0700] [1827775] [INFO] Booting worker with pid: 1827775
+[2022-10-09 23:13:38 +0700] [1827776] [INFO] Booting worker with pid: 1827776
+[2022-10-09 23:13:38 +0700] [1827777] [INFO] Booting worker with pid: 1827777
+[2022-10-09 23:13:38 +0700] [1827778] [INFO] Booting worker with pid: 1827778
+[2022-10-09 23:13:38 +0700] [1827779] [INFO] Booting worker with pid: 1827779
+[2022-10-09 23:13:38 +0700] [1827780] [INFO] Booting worker with pid: 1827780
+[2022-10-09 23:13:38 +0700] [1827781] [INFO] Booting worker with pid: 1827781
+[2022-10-09 23:13:38 +0700] [1827782] [INFO] Booting worker with pid: 1827782
+[2022-10-09 23:13:38 +0700] [1827760] [DEBUG] 15 workers
+[2022-10-09 23:13:38 +0700] [1827783] [INFO] Booting worker with pid: 1827783
+[2022-10-09 23:14:36 +0700] [1827779] [DEBUG] POST /updateroute
+[2022-10-09 23:15:55 +0700] [1827760] [INFO] Handling signal: int
+[2022-10-09 23:15:55 +0700] [1827779] [INFO] Worker exiting (pid: 1827779)
+[2022-10-09 23:15:55 +0700] [1827776] [INFO] Worker exiting (pid: 1827776)
+[2022-10-09 23:15:55 +0700] [1827781] [INFO] Worker exiting (pid: 1827781)
+[2022-10-09 23:15:55 +0700] [1827782] [INFO] Worker exiting (pid: 1827782)
+[2022-10-09 23:15:55 +0700] [1827773] [INFO] Worker exiting (pid: 1827773)
+[2022-10-09 23:15:55 +0700] [1827769] [INFO] Worker exiting (pid: 1827769)
+[2022-10-09 23:15:55 +0700] [1827771] [INFO] Worker exiting (pid: 1827771)
+[2022-10-09 23:15:55 +0700] [1827764] [INFO] Worker exiting (pid: 1827764)
+[2022-10-09 23:15:55 +0700] [1827766] [INFO] Worker exiting (pid: 1827766)
+[2022-10-09 23:15:55 +0700] [1827780] [INFO] Worker exiting (pid: 1827780)
+[2022-10-09 23:15:55 +0700] [1827783] [INFO] Worker exiting (pid: 1827783)
+[2022-10-09 23:15:55 +0700] [1827778] [INFO] Worker exiting (pid: 1827778)
+[2022-10-09 23:15:55 +0700] [1827777] [INFO] Worker exiting (pid: 1827777)
+[2022-10-09 23:15:55 +0700] [1827775] [INFO] Worker exiting (pid: 1827775)
+[2022-10-09 23:15:55 +0700] [1827765] [INFO] Worker exiting (pid: 1827765)
+[2022-10-09 23:15:55 +0700] [1827760] [INFO] Shutting down: Master
+[2022-10-09 23:17:31 +0700] [1830596] [DEBUG] Current configuration:
+  config: None
+  bind: ['127.0.0.1:8000']
+  backlog: 2048
+  workers: 15
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/core/ryu/mc
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: access.log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: error.log
+  loglevel: debug
+  capture_output: True
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: webserver:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7fe9b94a23a0>
+  on_reload: <function OnReload.on_reload at 0x7fe9b94a24c0>
+  when_ready: <function WhenReady.when_ready at 0x7fe9b94a25e0>
+  pre_fork: <function Prefork.pre_fork at 0x7fe9b94a2700>
+  post_fork: <function Postfork.post_fork at 0x7fe9b94a2820>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7fe9b94a2940>
+  worker_int: <function WorkerInt.worker_int at 0x7fe9b94a2a60>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7fe9b94a2b80>
+  pre_exec: <function PreExec.pre_exec at 0x7fe9b94a2ca0>
+  pre_request: <function PreRequest.pre_request at 0x7fe9b94a2dc0>
+  post_request: <function PostRequest.post_request at 0x7fe9b94a2e50>
+  child_exit: <function ChildExit.child_exit at 0x7fe9b94a2f70>
+  worker_exit: <function WorkerExit.worker_exit at 0x7fe9b94b50d0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7fe9b94b51f0>
+  on_exit: <function OnExit.on_exit at 0x7fe9b94b5310>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2022-10-09 23:17:31 +0700] [1830596] [INFO] Starting gunicorn 20.0.4
+[2022-10-09 23:17:31 +0700] [1830596] [DEBUG] Arbiter booted
+[2022-10-09 23:17:31 +0700] [1830596] [INFO] Listening at: http://127.0.0.1:8000 (1830596)
+[2022-10-09 23:17:31 +0700] [1830596] [INFO] Using worker: sync
+[2022-10-09 23:17:31 +0700] [1830599] [INFO] Booting worker with pid: 1830599
+[2022-10-09 23:17:31 +0700] [1830600] [INFO] Booting worker with pid: 1830600
+[2022-10-09 23:17:31 +0700] [1830601] [INFO] Booting worker with pid: 1830601
+[2022-10-09 23:17:31 +0700] [1830602] [INFO] Booting worker with pid: 1830602
+[2022-10-09 23:17:31 +0700] [1830603] [INFO] Booting worker with pid: 1830603
+[2022-10-09 23:17:31 +0700] [1830604] [INFO] Booting worker with pid: 1830604
+[2022-10-09 23:17:31 +0700] [1830607] [INFO] Booting worker with pid: 1830607
+[2022-10-09 23:17:31 +0700] [1830608] [INFO] Booting worker with pid: 1830608
+[2022-10-09 23:17:31 +0700] [1830609] [INFO] Booting worker with pid: 1830609
+[2022-10-09 23:17:31 +0700] [1830610] [INFO] Booting worker with pid: 1830610
+[2022-10-09 23:17:31 +0700] [1830611] [INFO] Booting worker with pid: 1830611
+[2022-10-09 23:17:31 +0700] [1830612] [INFO] Booting worker with pid: 1830612
+[2022-10-09 23:17:31 +0700] [1830613] [INFO] Booting worker with pid: 1830613
+[2022-10-09 23:17:31 +0700] [1830614] [INFO] Booting worker with pid: 1830614
+[2022-10-09 23:17:31 +0700] [1830615] [INFO] Booting worker with pid: 1830615
+[2022-10-09 23:17:32 +0700] [1830596] [DEBUG] 15 workers
+[2022-10-09 23:20:00 +0700] [1830596] [INFO] Handling signal: int
+[2022-10-09 23:20:01 +0700] [1830607] [INFO] Worker exiting (pid: 1830607)
+[2022-10-09 23:20:01 +0700] [1830599] [INFO] Worker exiting (pid: 1830599)
+[2022-10-09 23:20:01 +0700] [1830615] [INFO] Worker exiting (pid: 1830615)
+[2022-10-09 23:20:01 +0700] [1830602] [INFO] Worker exiting (pid: 1830602)
+[2022-10-09 23:20:01 +0700] [1830610] [INFO] Worker exiting (pid: 1830610)
+[2022-10-09 23:20:01 +0700] [1830609] [INFO] Worker exiting (pid: 1830609)
+[2022-10-09 23:20:01 +0700] [1830608] [INFO] Worker exiting (pid: 1830608)
+[2022-10-09 23:20:01 +0700] [1830613] [INFO] Worker exiting (pid: 1830613)
+[2022-10-09 23:20:01 +0700] [1830612] [INFO] Worker exiting (pid: 1830612)
+[2022-10-09 23:20:01 +0700] [1830614] [INFO] Worker exiting (pid: 1830614)
+[2022-10-09 23:20:01 +0700] [1830611] [INFO] Worker exiting (pid: 1830611)
+[2022-10-09 23:20:01 +0700] [1830603] [INFO] Worker exiting (pid: 1830603)
+[2022-10-09 23:20:01 +0700] [1830601] [INFO] Worker exiting (pid: 1830601)
+[2022-10-09 23:20:01 +0700] [1830600] [INFO] Worker exiting (pid: 1830600)
+[2022-10-09 23:20:01 +0700] [1830604] [INFO] Worker exiting (pid: 1830604)
+[2022-10-09 23:20:01 +0700] [1830596] [INFO] Shutting down: Master
+[2022-10-09 23:20:50 +0700] [1833065] [DEBUG] Current configuration:
+  config: None
+  bind: ['127.0.0.1:8000']
+  backlog: 2048
+  workers: 15
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/core/ryu/mc
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: access.log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: error.log
+  loglevel: debug
+  capture_output: True
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: webserver:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f2acdf293a0>
+  on_reload: <function OnReload.on_reload at 0x7f2acdf294c0>
+  when_ready: <function WhenReady.when_ready at 0x7f2acdf295e0>
+  pre_fork: <function Prefork.pre_fork at 0x7f2acdf29700>
+  post_fork: <function Postfork.post_fork at 0x7f2acdf29820>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f2acdf29940>
+  worker_int: <function WorkerInt.worker_int at 0x7f2acdf29a60>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f2acdf29b80>
+  pre_exec: <function PreExec.pre_exec at 0x7f2acdf29ca0>
+  pre_request: <function PreRequest.pre_request at 0x7f2acdf29dc0>
+  post_request: <function PostRequest.post_request at 0x7f2acdf29e50>
+  child_exit: <function ChildExit.child_exit at 0x7f2acdf29f70>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f2acdf3d0d0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f2acdf3d1f0>
+  on_exit: <function OnExit.on_exit at 0x7f2acdf3d310>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2022-10-09 23:20:50 +0700] [1833065] [INFO] Starting gunicorn 20.0.4
+[2022-10-09 23:20:50 +0700] [1833065] [DEBUG] Arbiter booted
+[2022-10-09 23:20:50 +0700] [1833065] [INFO] Listening at: http://127.0.0.1:8000 (1833065)
+[2022-10-09 23:20:50 +0700] [1833065] [INFO] Using worker: sync
+[2022-10-09 23:20:50 +0700] [1833068] [INFO] Booting worker with pid: 1833068
+[2022-10-09 23:20:50 +0700] [1833069] [INFO] Booting worker with pid: 1833069
+[2022-10-09 23:20:50 +0700] [1833071] [INFO] Booting worker with pid: 1833071
+[2022-10-09 23:20:50 +0700] [1833072] [INFO] Booting worker with pid: 1833072
+[2022-10-09 23:20:50 +0700] [1833073] [INFO] Booting worker with pid: 1833073
+[2022-10-09 23:20:50 +0700] [1833074] [INFO] Booting worker with pid: 1833074
+[2022-10-09 23:20:50 +0700] [1833075] [INFO] Booting worker with pid: 1833075
+[2022-10-09 23:20:50 +0700] [1833076] [INFO] Booting worker with pid: 1833076
+[2022-10-09 23:20:50 +0700] [1833077] [INFO] Booting worker with pid: 1833077
+[2022-10-09 23:20:50 +0700] [1833078] [INFO] Booting worker with pid: 1833078
+[2022-10-09 23:20:51 +0700] [1833080] [INFO] Booting worker with pid: 1833080
+[2022-10-09 23:20:51 +0700] [1833081] [INFO] Booting worker with pid: 1833081
+[2022-10-09 23:20:51 +0700] [1833082] [INFO] Booting worker with pid: 1833082
+[2022-10-09 23:20:51 +0700] [1833083] [INFO] Booting worker with pid: 1833083
+[2022-10-09 23:20:51 +0700] [1833084] [INFO] Booting worker with pid: 1833084
+[2022-10-09 23:20:51 +0700] [1833065] [DEBUG] 15 workers
+[2022-10-09 23:21:14 +0700] [1833084] [DEBUG] GET /refreshdata
+[2022-10-09 23:21:14 +0700] [1833083] [DEBUG] GET /refreshdata
+[2022-10-09 23:21:14 +0700] [1833069] [DEBUG] GET /refreshdata
+[2022-10-09 23:21:14 +0700] [1833069] [DEBUG] GET /refreshdata
+[2022-10-09 23:23:58 +0700] [1833065] [INFO] Handling signal: hup
+[2022-10-09 23:23:58 +0700] [1833065] [INFO] Hang up: Master
+[2022-10-09 23:23:58 +0700] [1833065] [DEBUG] Current configuration:
+  config: None
+  bind: ['127.0.0.1:8000']
+  backlog: 2048
+  workers: 15
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/core/ryu/mc
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: access.log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: error.log
+  loglevel: debug
+  capture_output: True
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: webserver:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f2acdf293a0>
+  on_reload: <function OnReload.on_reload at 0x7f2acdf294c0>
+  when_ready: <function WhenReady.when_ready at 0x7f2acdf295e0>
+  pre_fork: <function Prefork.pre_fork at 0x7f2acdf29700>
+  post_fork: <function Postfork.post_fork at 0x7f2acdf29820>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f2acdf29940>
+  worker_int: <function WorkerInt.worker_int at 0x7f2acdf29a60>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f2acdf29b80>
+  pre_exec: <function PreExec.pre_exec at 0x7f2acdf29ca0>
+  pre_request: <function PreRequest.pre_request at 0x7f2acdf29dc0>
+  post_request: <function PostRequest.post_request at 0x7f2acdf29e50>
+  child_exit: <function ChildExit.child_exit at 0x7f2acdf29f70>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f2acdf3d0d0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f2acdf3d1f0>
+  on_exit: <function OnExit.on_exit at 0x7f2acdf3d310>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2022-10-09 23:23:58 +0700] [1842310] [INFO] Booting worker with pid: 1842310
+[2022-10-09 23:23:58 +0700] [1842311] [INFO] Booting worker with pid: 1842311
+[2022-10-09 23:23:58 +0700] [1842314] [INFO] Booting worker with pid: 1842314
+[2022-10-09 23:23:58 +0700] [1842309] [INFO] Booting worker with pid: 1842309
+[2022-10-09 23:23:58 +0700] [1842318] [INFO] Booting worker with pid: 1842318
+[2022-10-09 23:23:58 +0700] [1842326] [INFO] Booting worker with pid: 1842326
+[2022-10-09 23:23:58 +0700] [1842317] [INFO] Booting worker with pid: 1842317
+[2022-10-09 23:23:58 +0700] [1842315] [INFO] Booting worker with pid: 1842315
+[2022-10-09 23:23:58 +0700] [1842328] [INFO] Booting worker with pid: 1842328
+[2022-10-09 23:23:58 +0700] [1842319] [INFO] Booting worker with pid: 1842319
+[2022-10-09 23:23:58 +0700] [1842313] [INFO] Booting worker with pid: 1842313
+[2022-10-09 23:23:58 +0700] [1833065] [INFO] Handling signal: hup
+[2022-10-09 23:23:58 +0700] [1833065] [INFO] Hang up: Master
+[2022-10-09 23:23:58 +0700] [1842308] [INFO] Booting worker with pid: 1842308
+[2022-10-09 23:23:58 +0700] [1842327] [INFO] Booting worker with pid: 1842327
+[2022-10-09 23:23:58 +0700] [1842312] [INFO] Booting worker with pid: 1842312
+[2022-10-09 23:23:59 +0700] [1833065] [DEBUG] Current configuration:
+  config: None
+  bind: ['127.0.0.1:8000']
+  backlog: 2048
+  workers: 15
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/core/ryu/mc
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: access.log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: error.log
+  loglevel: debug
+  capture_output: True
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: webserver:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f2acdf293a0>
+  on_reload: <function OnReload.on_reload at 0x7f2acdf294c0>
+  when_ready: <function WhenReady.when_ready at 0x7f2acdf295e0>
+  pre_fork: <function Prefork.pre_fork at 0x7f2acdf29700>
+  post_fork: <function Postfork.post_fork at 0x7f2acdf29820>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f2acdf29940>
+  worker_int: <function WorkerInt.worker_int at 0x7f2acdf29a60>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f2acdf29b80>
+  pre_exec: <function PreExec.pre_exec at 0x7f2acdf29ca0>
+  pre_request: <function PreRequest.pre_request at 0x7f2acdf29dc0>
+  post_request: <function PostRequest.post_request at 0x7f2acdf29e50>
+  child_exit: <function ChildExit.child_exit at 0x7f2acdf29f70>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f2acdf3d0d0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f2acdf3d1f0>
+  on_exit: <function OnExit.on_exit at 0x7f2acdf3d310>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2022-10-09 23:23:59 +0700] [1842330] [INFO] Booting worker with pid: 1842330
+[2022-10-09 23:23:59 +0700] [1842331] [INFO] Booting worker with pid: 1842331
+[2022-10-09 23:23:59 +0700] [1842334] [INFO] Booting worker with pid: 1842334
+[2022-10-09 23:23:59 +0700] [1842333] [INFO] Booting worker with pid: 1842333
+[2022-10-09 23:24:00 +0700] [1842337] [INFO] Booting worker with pid: 1842337
+[2022-10-09 23:24:01 +0700] [1842362] [INFO] Booting worker with pid: 1842362
+[2022-10-09 23:24:00 +0700] [1842329] [INFO] Booting worker with pid: 1842329
+[2022-10-09 23:23:59 +0700] [1842336] [INFO] Booting worker with pid: 1842336
+[2022-10-09 23:24:01 +0700] [1842365] [INFO] Booting worker with pid: 1842365
+[2022-10-09 23:24:01 +0700] [1842368] [INFO] Booting worker with pid: 1842368
+[2022-10-09 23:24:02 +0700] [1842364] [INFO] Booting worker with pid: 1842364
+[2022-10-09 23:24:02 +0700] [1842375] [INFO] Booting worker with pid: 1842375
+[2022-10-09 23:24:01 +0700] [1842366] [INFO] Booting worker with pid: 1842366
+[2022-10-09 23:24:01 +0700] [1842363] [INFO] Booting worker with pid: 1842363
+[2022-10-09 23:24:02 +0700] [1842376] [INFO] Booting worker with pid: 1842376
+[2022-10-09 23:24:02 +0700] [1842367] [INFO] Booting worker with pid: 1842367
+[2022-10-09 23:24:11 +0700] [1842326] [INFO] Worker exiting (pid: 1842326)
+[2022-10-09 23:24:12 +0700] [1842314] [INFO] Worker exiting (pid: 1842314)
+[2022-10-09 23:24:12 +0700] [1842310] [INFO] Worker exiting (pid: 1842310)
+[2022-10-09 23:24:12 +0700] [1842312] [INFO] Worker exiting (pid: 1842312)
+[2022-10-09 23:24:13 +0700] [1842311] [INFO] Worker exiting (pid: 1842311)
+[2022-10-09 23:24:13 +0700] [1842317] [INFO] Worker exiting (pid: 1842317)
+[2022-10-09 23:24:13 +0700] [1842319] [INFO] Worker exiting (pid: 1842319)
+[2022-10-09 23:24:13 +0700] [1842315] [INFO] Worker exiting (pid: 1842315)
+[2022-10-09 23:24:14 +0700] [1842318] [INFO] Worker exiting (pid: 1842318)
+[2022-10-09 23:24:14 +0700] [1842308] [INFO] Worker exiting (pid: 1842308)
+[2022-10-09 23:24:14 +0700] [1842327] [INFO] Worker exiting (pid: 1842327)
+[2022-10-09 23:24:14 +0700] [1842309] [INFO] Worker exiting (pid: 1842309)
+[2022-10-09 23:24:14 +0700] [1842313] [INFO] Worker exiting (pid: 1842313)
+[2022-10-09 23:24:14 +0700] [1842329] [INFO] Worker exiting (pid: 1842329)
+[2022-10-09 23:24:15 +0700] [1842328] [INFO] Worker exiting (pid: 1842328)
+[2022-10-09 23:29:24 +0700] [1848810] [DEBUG] Current configuration:
+  config: None
+  bind: ['127.0.0.1:8000']
+  backlog: 2048
+  workers: 15
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/core/ryu/mc
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: access.log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: error.log
+  loglevel: debug
+  capture_output: True
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: webserver:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7fc43128c3a0>
+  on_reload: <function OnReload.on_reload at 0x7fc43128c4c0>
+  when_ready: <function WhenReady.when_ready at 0x7fc43128c5e0>
+  pre_fork: <function Prefork.pre_fork at 0x7fc43128c700>
+  post_fork: <function Postfork.post_fork at 0x7fc43128c820>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7fc43128c940>
+  worker_int: <function WorkerInt.worker_int at 0x7fc43128ca60>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7fc43128cb80>
+  pre_exec: <function PreExec.pre_exec at 0x7fc43128cca0>
+  pre_request: <function PreRequest.pre_request at 0x7fc43128cdc0>
+  post_request: <function PostRequest.post_request at 0x7fc43128ce50>
+  child_exit: <function ChildExit.child_exit at 0x7fc43128cf70>
+  worker_exit: <function WorkerExit.worker_exit at 0x7fc43129f0d0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7fc43129f1f0>
+  on_exit: <function OnExit.on_exit at 0x7fc43129f310>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2022-10-09 23:29:24 +0700] [1848810] [INFO] Starting gunicorn 20.0.4
+[2022-10-09 23:29:24 +0700] [1848810] [DEBUG] Arbiter booted
+[2022-10-09 23:29:24 +0700] [1848810] [INFO] Listening at: http://127.0.0.1:8000 (1848810)
+[2022-10-09 23:29:24 +0700] [1848810] [INFO] Using worker: sync
+[2022-10-09 23:29:24 +0700] [1848812] [INFO] Booting worker with pid: 1848812
+[2022-10-09 23:29:24 +0700] [1848813] [INFO] Booting worker with pid: 1848813
+[2022-10-09 23:29:24 +0700] [1848814] [INFO] Booting worker with pid: 1848814
+[2022-10-09 23:29:24 +0700] [1848815] [INFO] Booting worker with pid: 1848815
+[2022-10-09 23:29:24 +0700] [1848816] [INFO] Booting worker with pid: 1848816
+[2022-10-09 23:29:24 +0700] [1848817] [INFO] Booting worker with pid: 1848817
+[2022-10-09 23:29:24 +0700] [1848818] [INFO] Booting worker with pid: 1848818
+[2022-10-09 23:29:24 +0700] [1848819] [INFO] Booting worker with pid: 1848819
+[2022-10-09 23:29:24 +0700] [1848820] [INFO] Booting worker with pid: 1848820
+[2022-10-09 23:29:24 +0700] [1848821] [INFO] Booting worker with pid: 1848821
+[2022-10-09 23:29:24 +0700] [1848822] [INFO] Booting worker with pid: 1848822
+[2022-10-09 23:29:24 +0700] [1848823] [INFO] Booting worker with pid: 1848823
+[2022-10-09 23:29:24 +0700] [1848824] [INFO] Booting worker with pid: 1848824
+[2022-10-09 23:29:24 +0700] [1848825] [INFO] Booting worker with pid: 1848825
+[2022-10-09 23:29:25 +0700] [1848826] [INFO] Booting worker with pid: 1848826
+[2022-10-09 23:29:25 +0700] [1848810] [DEBUG] 15 workers
+[2022-10-09 23:33:15 +0700] [1848822] [DEBUG] GET /refreshdata
+[2022-10-09 23:33:15 +0700] [1848822] [DEBUG] GET /refreshdata
+[2022-10-09 23:33:15 +0700] [1848822] [DEBUG] GET /refreshdata
+[2022-10-09 23:33:15 +0700] [1848825] [DEBUG] GET /refreshdata
+[2022-10-09 23:37:07 +0700] [1848821] [DEBUG] GET /refreshdata
+[2022-10-09 23:37:07 +0700] [1848821] [DEBUG] GET /refreshdata
+[2022-10-09 23:37:07 +0700] [1848822] [DEBUG] GET /refreshdata
+[2022-10-09 23:37:08 +0700] [1848823] [DEBUG] GET /refreshdata
